@@ -1,5 +1,6 @@
 from datetime import datetime
-import statistics
+
+from analisisResultados import analisisResultados
 
 #Se define objeto Experimento
 class Experimento:
@@ -13,7 +14,7 @@ class Experimento:
 def gestionarExperimento(listaExperimentos):
     resultados={}
     variables=[]
-    tipos=['Quimica', 'Fisica', 'Biologia']
+    tipos=['Quimica', 'Fisica', 'Biologia', 'Matematicas']
 
     #valida que nombre no en blanco
     
@@ -109,9 +110,15 @@ def menu():
         elif opcion == "3":
             print("saliendo del programa....")
         elif opcion == "4":
-            print("saliendo del programa....")
+            analisisResultados(listaExperimentos)
         elif opcion == "5":
             print("saliendo del programa....")
+            break
+        elif opcion == "6":
+            print("saliendo del programa....")
+            break
+        elif opcion == "7":
+            print("Programa Finalizado")
             break
         else:
             print("opcion invalida")

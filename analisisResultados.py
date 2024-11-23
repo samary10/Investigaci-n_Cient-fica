@@ -25,4 +25,4 @@ def analisisResultados(listaExperimentos):
                 print(f"    - Máximo: {valor_maximo}")
                 print(f"    - Mínimo: {valor_minimo}")
             except ValueError:
-                print(f"**Los valores de la variable '{variable}' no son válidos para análisis numérico.**")
+                print(f"**Los valores de la variable '{variable}' no son válidos para el análisis numérico.**")
