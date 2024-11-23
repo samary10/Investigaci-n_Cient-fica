@@ -13,7 +13,7 @@ class Experimento:
 def gestionarExperimento(listaExperimentos):
     resultados={}
     variables=[]
-    tipos=['Quimica', 'Fisica', 'Biologuia']
+    tipos=['Quimica', 'Fisica', 'Biologia']
 
     #valida que nombre no en blanco
     
@@ -94,13 +94,13 @@ def menu():
     while True:
         print("BIENVENIDO AL SISTEMA DE INVESTIGACION")
         print("1. Gestion Experimento")
-        print("2. Visualizas Experimento")
+        print("2. Visualizar Experimento")
         print("3. Eliminar Experimentos")
         print("4. Analisis de Resultados")
         print("5. Comparar Experimentos")
         print("6. Gestion de Informe")
         print("7. Salir")
-        opcion = input("seleccione una opcion: ")
+        opcion = input("Seleccione una opcion: ")
         
         if opcion == "1":
             gestionarExperimento(listaExperimentos)
