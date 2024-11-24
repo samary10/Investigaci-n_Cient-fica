@@ -1,6 +1,6 @@
 from datetime import datetime
-
 from analisisResultados import analisisResultados
+from eliminarExperimento import eliminarExperimento
 
 #Se define objeto Experimento
 class Experimento:
@@ -16,8 +16,7 @@ def gestionarExperimento(listaExperimentos):
     variables=[]
     tipos=['Quimica', 'Fisica', 'Biologia', 'Matematicas']
 
-    #valida que nombre no en blanco
-    
+    #valida que nombre no este en blanco    
     nombre = input("Ingrese el nombre del experimento: ")
     if not nombre:
         print("**Debe ingresar un nombre**")
@@ -108,7 +107,7 @@ def menu():
         elif opcion == "2":
             VisualizarExperimento (listaExperimentos)
         elif opcion == "3":
-            print("saliendo del programa....")
+            eliminarExperimento(listaExperimentos)
         elif opcion == "4":
             analisisResultados(listaExperimentos)
         elif opcion == "5":
