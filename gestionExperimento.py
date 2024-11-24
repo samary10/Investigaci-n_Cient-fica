@@ -95,25 +95,16 @@ def VisualizarExperimento(listaExperimentos):
 
 #funcion para eliminar experimento
 def eliminarExperimento (listaExperimentos):
-    if not listaExperimentos:
-        print("\n**no hay experimentos registradas**\n")
-        return
     VisualizarExperimento (listaExperimentos)
-
     eliminar=input("\nIngrese el numeto del experimento a eliminar:  ")
-    if eliminar.isalpha():  # Verifica si es una letra
-        print("\n**El valor ingresado no es numerico**\n")
-    elif not eliminar: # Verifica si esta en blanco
-        print("\n**Debe ingresar un valor**\n")
+    if not eliminar or eliminar.isalpha():  # Verifica si es una letra o esta en blanco 
+        print("\n**El valor ingresado no es valido**\n")
     else:
         eliminar=int(eliminar)
         if eliminar <= len(listaExperimentos):  # Verifica si objeto esta en la lista
             listaExperimentos.remove(listaExperimentos[eliminar-1])
             print("Se elimino el experimento")
-            if not listaExperimentos:
-                print("\n**no hay mas experimentos registradas**\n")
-            else:
-                VisualizarExperimento (listaExperimentos)
+            VisualizarExperimento (listaExperimentos)
         else:
              print("\n**el experimento indicado no existe**\n")
        
