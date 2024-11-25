@@ -107,7 +107,7 @@ def menu():
         elif opcion == "2":
             VisualizarExperimento (listaExperimentos)
         elif opcion == "3":
-            eliminarExperimento(listaExperimentos)
+            eliminarExperimento (listaExperimentos)
         elif opcion == "4":
             analisisResultados(listaExperimentos)
         elif opcion == "5":
@@ -122,7 +122,6 @@ def menu():
         else:
             print("opcion invalida")
             
-
 if __name__ == "__main__":
     menu()        
         
