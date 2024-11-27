@@ -1,6 +1,8 @@
 from datetime import datetime
 from analisisResultados import analisisResultados
 from eliminarExperimento import eliminarExperimento
+from compararExperimento import compararExperimentos
+from generarInforme import generarInforme
 
 #Se define objeto Experimento
 class Experimento:
@@ -133,11 +135,9 @@ def menu():
         elif opcion == "4":
             analisisResultados(listaExperimentos)
         elif opcion == "5":
-            print("saliendo del programa....")
-            break
+            compararExperimentos(listaExperimentos)
         elif opcion == "6":
-            print("saliendo del programa....")
-            break
+            generarInforme(listaExperimentos)
         elif opcion == "7":
             print("Programa Finalizado")
             break
