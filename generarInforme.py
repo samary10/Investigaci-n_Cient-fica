@@ -14,8 +14,8 @@ def generarInforme(listaExperimentos):
          print("**Selección inválida. Intente nuevamente.**")
          return
    
-     with open("informe_final.txt", "w") as archivo:
-        archivo.write(f"INFORME FINAL DE EXPERIMENTOS\n")
+     with open("informe_experimento.txt", "w") as archivo:
+        archivo.write(f"INFORME\n")
         for experimento in seleccionados:  
             archivo.write(f"\nExperimento {i}: {experimento.nombre}\n")
             archivo.write(f"Tipo: {experimento.tipoExperimento}\n")
@@ -35,4 +35,8 @@ def generarInforme(listaExperimentos):
                 archivo.write(f"    - Máximo: {valor_maximo}\n")
                 archivo.write(f"    - Mínimo: {valor_minimo}\n")
 
-     print("Informe generado como 'informe_final.txt' ")
+     print("Informe generado como 'informe_tareas.txt' ")  
+        
+
+
+     
