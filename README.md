@@ -7,7 +7,7 @@ Aplicación de simulación para un proyecto investigación científica que permi
 El proyecto consta de un menú con las siguientes opciones
 
 1. Inicio del Programa:
-   El programa comienza presentando un menú con las opciones disponibles.
+   Una vez descargado el proyecto se debe ejecutarel el programa a partir de la funcion gestionExperimento.py y comenzará presentando un menú con las opciones disponibles.
 2. Gestion de experimentos:
    El usuario puede agregar, ver y eliminar experimentos según sea necesario.
 3. Analisis de Datos:
